@@ -1,14 +1,19 @@
-{% extends "layout.html" %}
 {% block content %}
 <title>Upload new File</title>
     <h1>Upload new File</h1>
-    <form method=post enctype=multipart/form-data>
+
+    <form action="{% url 'index' %}" method=post enctype=multipart/form-data>
         {% csrf_token %}
-        <input type=file name=file>
+        {{ form.as_p }}
         <input type=submit value=Upload>
     </form>
+
+    {% if documents %}
+        {{ image_path }}
+    {% endif %}
+
     {% if result%}
-    <h2>The result is {{result}}</h2>
+        <h2>The result is {{result}}</h2>
     {% endif%}
 
 {% endblock content %}
