@@ -1,4 +1,4 @@
-/dataset/
-/pkl/
-/model/
-/handwrittin/pic_upload/
+/dataset/*
+/pkl/*
+/model/*
+/handwrittin/pic_upload/*
