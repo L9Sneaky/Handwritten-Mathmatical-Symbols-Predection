@@ -1,3 +1,4 @@
+{% extends "layout.html" %}
 {% block content %}
 <title>Upload new File</title>
     <h1>Upload new File</h1>
@@ -9,7 +10,8 @@
     </form>
 
     {% if documents %}
-        {{ image_path }}
+        <img src="{{ image_path }}" alt="">
+
     {% endif %}
 
     {% if result%}

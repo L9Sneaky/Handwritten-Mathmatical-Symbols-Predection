@@ -4,7 +4,8 @@ from sklearn.model_selection import train_test_split
 import pickle
 import matplotlib.pyplot as plt
 import yaml
-#%%
+#%%X.shape[1:]
+
 print('Loading Data')
 X = pickle.load(open("pkl/X.pickle", "rb"))
 y = pickle.load(open("pkl/y.pickle", "rb"))
@@ -14,6 +15,8 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25)
 with open("model/categories.yaml", 'r') as stream:
     categories = yaml.safe_load(stream)
 
+
+X.shape[1:]
 # %%
 n=50
 #%%
