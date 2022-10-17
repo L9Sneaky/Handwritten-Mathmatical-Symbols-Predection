@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+<title>Upload new File</title>
+    <h1>Upload new File</h1>
+    <form method=post enctype=multipart/form-data>
+        {% csrf_token %}
+        <input type=file name=file>
+        <input type=submit value=Upload>
+    </form>
+    {% if result%}
+    <h2>The result is {{result}}</h2>
+    {% endif%}
+
+{% endblock content %}
+
+
+<script>
+    function preview() {
+        frame.src = URL.createObjectURL(event.target.files[0]);
+    }
+    function clearImage() {
+        document.getElementById('formFile').value = null;
+        frame.src = "";
+    }
+</script>
