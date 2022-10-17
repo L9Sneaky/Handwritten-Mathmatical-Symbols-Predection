@@ -8,7 +8,6 @@ from .forms import ImageForm
 import numpy as np
 import cv2
 import yaml
-import tensorflow as tf
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 # Create your views here.
@@ -37,8 +36,6 @@ def index(request):
     result = ''
     if image_path is not '':
         img = prep_img(image_path)
-        # result = img.shape
-        # result = model.summary()
         predictions = model.predict(img)
         result = categories[int(np.argmax(predictions))]
     return render(request, 'index.html',
