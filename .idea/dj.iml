@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/[" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/]" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/alpha" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/ascii_124" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/b" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/beta" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/cos" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/d" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/Delta" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/div" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/e" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/exists" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/f" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/forall" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/forward_slash" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/gamma" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/geq" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/gt" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/i" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/in" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/infty" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/int" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/j" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/k" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/l" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/lambda" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/ldots" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/leq" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/lim" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/log" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/lt" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/mu" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/neq" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/o" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/p" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/phi" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/pi" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/pm" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/prime" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/q" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/rightarrow" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/sigma" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/sin" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/sqrt" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/sum" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/tan" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/theta" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/times" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/u" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/v" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/w" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/y" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/z" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/{" />
+      <excludeFolder url="file://$MODULE_DIR$/extracted_images/}" />
+      <excludeFolder url="file://$MODULE_DIR$/dataset" />
+      <excludeFolder url="file://$MODULE_DIR$/pkl" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

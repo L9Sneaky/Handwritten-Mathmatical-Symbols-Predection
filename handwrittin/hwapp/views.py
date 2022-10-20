@@ -1,10 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
+from django.http import HttpResponse
 from django.urls import reverse
 
 from .models import PicUpload
 from .forms import ImageForm
 
+import json
 import numpy as np
 import cv2
 import yaml
@@ -37,6 +39,9 @@ def index(request):
         img = prep_img(image_path)
         predictions = model.predict(img)
         result = categories[int(np.argmax(predictions))]
+
+    # content = json.simplejson.dumps({'documents': documents, 'image_path': image_path, 'form': form, 'result': result})
+    # return HttpResponse(content, content_type='application/json')
     return render(request, 'index.html',
                   {'documents': documents, 'image_path': image_path, 'form': form, 'result': result})
 
