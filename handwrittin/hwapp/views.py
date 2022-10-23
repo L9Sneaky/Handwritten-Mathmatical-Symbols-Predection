@@ -10,7 +10,7 @@ import json
 import numpy as np
 import cv2
 import yaml
-from tensorflow.keras.models import load_model
+import onnxruntime as rt
 # Create your views here.
 
 
@@ -37,7 +37,8 @@ def index(request):
     result = ''
     if image_path is not '':
         img = prep_img(image_path)
-        predictions = model.predict(img)
+        inputDetails = model.get_inputs()
+        predictions = model.run(None, {inputDetails[0].name: img})
         result = categories[int(np.argmax(predictions))]
 
     # content = json.simplejson.dumps({'documents': documents, 'image_path': image_path, 'form': form, 'result': result})
@@ -63,6 +64,5 @@ def prep_img(img_path):
 
 
 def get_model():
-    model = load_model('../model/model.h5')
-    model.load_weights('../model/modelW.h5')
+    model = rt.InferenceSession('../model/model.onnx')
     return model
