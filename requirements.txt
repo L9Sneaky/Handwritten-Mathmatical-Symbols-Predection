@@ -1,0 +1,12 @@
+tensorflow
+sklearn
+matplotlib
+onnx
+onnxruntime
+tf2onnx
+pyyaml
+opencv-python
+numpy
+django
+gunicorn
+martor

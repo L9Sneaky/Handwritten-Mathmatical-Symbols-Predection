@@ -17,19 +17,26 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 PIC_DIR = os.path.join(BASE_DIR, 'pic_upload')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-qwg%$kb7ae3sme_ihc6go)b2bpm7i5a2&i%7b&)wa56*e77p6-'
+# # SECURITY WARNING: keep the secret key used in production secret!
+# SECRET_KEY = 'django-insecure-qwg%$kb7ae3sme_ihc6go)b2bpm7i5a2&i%7b&)wa56*e77p6-'
+# # SECURITY WARNING: don't run with debug turned on in production!
+# DEBUG = True
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# ALLOWED_HOSTS = []
 
-ALLOWED_HOSTS = []
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
+DEBUG = int(os.environ.get("DEBUG", default=0))
+
+# 'DJANGO_ALLOWED_HOSTS' should be a single string of hosts with a space between each.
+# For example: 'DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]'
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -122,7 +129,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIR = [STATIC_DIR,]
+STATIC_ROOT = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
 
 # PIC
 PIC_ROOT = PIC_DIR

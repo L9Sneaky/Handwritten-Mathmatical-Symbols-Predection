@@ -35,7 +35,7 @@ def index(request):
     categories = get_category()
     model = get_model()
     result = ''
-    if image_path is not '':
+    if image_path != '':
         img = prep_img(image_path)
         inputDetails = model.get_inputs()
         predictions = model.run(None, {inputDetails[0].name: img})
